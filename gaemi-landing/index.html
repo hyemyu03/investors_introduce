@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>개미들의 등장이라 | 랜딩</title>
+  <meta name="description" content="링크를 열면 바로 두 장의 소개 이미지를 보여주는 간단한 페이지입니다.">
+  <meta property="og:title" content="개미들의 등장이라 | 랜딩">
+  <meta property="og:description" content="링크를 열면 바로 두 장의 소개 이미지를 보여줍니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/poster-1.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preload" as="image" href="assets/poster-1.jpg">
+  <style>
+    :root { --bg:#f5dfe3; --max:1100px; }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; background:var(--bg); }
+    body { font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif; }
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: clamp(8px, 2.5vw, 24px);
+    }
+    img {
+      display:block;
+      width:100%;
+      height:auto;
+      border-radius: clamp(6px, 1.2vw, 14px);
+      box-shadow: 0 8px 30px rgba(0,0,0,.12);
+      background:#fff;
+    }
+    .img-card + .img-card { margin-top: clamp(12px, 3vw, 28px); }
+    header {
+      text-align:center;
+      margin: clamp(6px, 1.5vw, 16px) 0 clamp(6px, 1.5vw, 18px);
+      color:#6a2d2f;
+      font-weight:700;
+      letter-spacing:.02em;
+    }
+    header small { display:block; font-weight:500; opacity:.7; }
+    footer { text-align:center; font-size:14px; color:#7a5a5b; margin: 20px 0 12px; }
+    a.minilink { color:inherit; text-underline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>주식왕들 사이에 <span aria-hidden="true">개미들의 등장이라</span></div>
+      <small>링크를 열면 바로 이미지가 보이는 심플 랜딩</small>
+    </header>
+
+    <figure class="img-card">
+      <img src="assets/poster-1.jpg" alt="개미들의 등장이라 - 표지 이미지" loading="eager">
+    </figure>
+
+    <figure class="img-card">
+      <img src="assets/poster-2.jpg" alt="10대를 위한 모의투자 게임 - 소개 이미지" loading="lazy">
+    </figure>
+
+    <footer>
+      © 2025. <a class="minilink" href="https://instagram.com/ant_investor_official" target="_blank" rel="noopener">ant_investor_official</a>
+    </footer>
+  </div>
+</body>
+</html>
